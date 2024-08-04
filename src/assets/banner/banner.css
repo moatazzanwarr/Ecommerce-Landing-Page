@@ -1,0 +1,31 @@
+.banner{
+    position: relative;
+    margin: 45px 0;
+}
+.banner .img img{
+    width: 100%;
+}
+
+.banner .text{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.banner .text h4{
+    font-size: 24px;
+    color: #253D4E;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.banner .text a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3BB77E;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 7px;
+}

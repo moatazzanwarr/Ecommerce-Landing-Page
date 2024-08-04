@@ -1,0 +1,41 @@
+.popular{
+    margin: 50px 0;
+}
+
+.popular .bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+}
+
+.popular .bar h1{
+    font-size: 32px;
+    color: #253D4E;
+}
+
+.popular .bar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.popular .bar ul a{
+    font-size: 16px;
+    color: #253D4E;
+}
+
+.popular .bar ul a:hover{
+    color: #3BB77E;
+    transition: .4s ease;
+}
+
+.popular .bar ul li:first-child a{
+    color: #3BB77E;
+}
+
+.popular .products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 24px;
+}

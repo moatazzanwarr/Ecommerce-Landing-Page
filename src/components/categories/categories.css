@@ -1,0 +1,54 @@
+.Categories{
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.Categories .bar{
+    margin: 0 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Categories .bar .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Categories .bar .left h1{
+    font-size: 32px;
+    color: #253D4E;
+}
+
+.Categories .bar .left ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Categories .bar .right .i{
+    background: #F2F3F4;
+    color: #7E7E7E;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Categories .bar .left ul a{
+    color: #253D4E;
+    font-size: 16px;
+}
+
+.Categories .cards{
+    width: fit-content;
+}
+
+.Categories .banners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
