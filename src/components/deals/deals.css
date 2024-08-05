@@ -1,0 +1,17 @@
+.deals{
+    border: 1px solid red;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.daels>.deals-card>img{
+    border: 1px solid yellow;
+}
+
+.deals .deals-card .text h4{
+    color: red;
+}
+.deals>.deals-card>.text>.rate{
+    color: green;
+}
