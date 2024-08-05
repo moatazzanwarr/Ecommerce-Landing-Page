@@ -5,6 +5,7 @@ import Slider from '../main-slider/slider'
 import Categories from '../categories/categories'
 import Popular from '../popular/popular'
 import Daily_best_sells from '../daily_best_sells/daily_best_sells'
+import Deals from '../deals/deals'
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
       <Categories/>
       <Popular/>
       <Daily_best_sells/>
+      <Deals/>
     </section>
   )
 }

@@ -2,7 +2,7 @@
 import React from "react";
 import "./daily_best_sells.css";
 import { Link, NavLink } from "react-router-dom";
-import Best_sells_product from "../../assets/best_sells_product/best_sells_product";
+import Best_sells_product from "./best_sells_product";
 
 // images
 import shopNowBg from '../../assets/images/shopnow-img.png'

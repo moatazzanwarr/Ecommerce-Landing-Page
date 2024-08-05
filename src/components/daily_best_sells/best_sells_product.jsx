@@ -1,6 +1,5 @@
 // Imports
 import React from 'react'
-import './best_sells_product.css'
 
 // Icons
 import StarIcon from '@mui/icons-material/Star';

@@ -1,7 +1,8 @@
 // Imports
 import React from "react";
 import "./categories.css";
-import Card from "../../assets/card/card";
+
+import Card from "./card";
 import cart_1 from "../../assets/images/cart-1.png";
 import cart_2 from "../../assets/images/cart-2.png";
 import cart_3 from "../../assets/images/cart-3.png";
@@ -13,16 +14,18 @@ import cart_8 from "../../assets/images/cart-8.png";
 import cart_9 from "../../assets/images/cart-9.png";
 import cart_10 from "../../assets/images/cart-10.png";
 
-import Banner from "../../assets/banner/banner";
+import Banner from "./banner";
 import banner_bg_1 from "../../assets/images/banner-1.png.png";
 import banner_bg_2 from "../../assets/images/banner-2.png.png";
 import banner_bg_3 from "../../assets/images/banner-3.png.png";
 import { NavLink } from "react-router-dom";
 
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+// Icons
+import icons from "../../assets/icons";
 
-const cartData = {
+
+
+const cardData = {
   src: [
     cart_1,
     cart_2,
@@ -64,17 +67,17 @@ function Categories() {
           </ul>
         </div>
         <div className="right">
-          <ArrowBackIcon className="i"/>
-          <ArrowForwardIcon className="i"/>
+          <icons.ArrowBackIcon className="i"/>
+          <icons.ArrowForwardIcon className="i"/>
         </div>
       </div>
 
       <div className="cards">
-        {cartData.src.map((src, i) => (
+        {cardData.src.map((src, i) => (
           <Card
             key={src}
-            src={cartData.src[i]}
-            title={cartData.titels[i]}
+            src={cardData.src[i]}
+            title={cardData.titels[i]}
             number="26"
           />
         ))}

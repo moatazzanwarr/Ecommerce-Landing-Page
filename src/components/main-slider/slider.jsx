@@ -2,8 +2,9 @@
 import React from "react";
 import "./slider.css";
 
-import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
-import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+// Icons
+import icons from "../../assets/icons";
+
 
 function Slider() {
   return (
@@ -20,10 +21,10 @@ function Slider() {
       </div>
 
       <span>
-        <ArrowCircleLeftIcon className="slide-left i" />
+        <icons.ArrowCircleLeftIcon className="slide-left i" />
       </span>
       <span>
-        <ArrowCircleRightIcon className="slide-right i" />
+        <icons.ArrowCircleRightIcon className="slide-right i" />
       </span>
     </div>
   );

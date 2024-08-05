@@ -1,6 +1,5 @@
 // Imports
 import React from 'react'
-import './card.css'
 function Card({src,title,number}) {
   return (
     <div className='card'>

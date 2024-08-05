@@ -1,8 +1,8 @@
 // Imports
 import React from 'react'
-import './pop_product.css'
-import StarIcon from '@mui/icons-material/Star';
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+
+// Icons
+import icons from '../../assets/icons'
 
 function Pop_product({src,type,title,company,rate,price,previous}) {
   return (
@@ -14,14 +14,14 @@ function Pop_product({src,type,title,company,rate,price,previous}) {
         <span>{type}</span>
         <h4>{title}</h4>
         <div className="rate">
-            <StarIcon className='i'/> 
+            <icons.StarIcon className='i'/> 
             <span>({rate})</span>
         </div>
         <p className='company'>By <span>{company}</span></p>
         <div className="price_add">
             <p><span>${price}</span><span>${previous}</span></p>
             <div className="add">
-                <ShoppingCartCheckoutIcon className='i'/> <span>Add</span>
+                <icons.ShoppingCartCheckoutIcon className='i'/> <span>Add</span>
             </div>
         </div>
       </div>

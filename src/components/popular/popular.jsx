@@ -2,7 +2,7 @@
 import React from "react";
 import "./popular.css";
 import { NavLink } from "react-router-dom";
-import Pop_product from "../../assets/popular product/pop_product";
+import Pop_product from "./pop_product";
 
 // Images
 import product_1 from "../../assets/images/product-1.png";

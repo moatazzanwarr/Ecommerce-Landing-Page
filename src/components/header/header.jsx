@@ -4,15 +4,8 @@ import './header.css'
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png"
 
-import SearchIcon from '@mui/icons-material/Search';
-import CachedIcon from '@mui/icons-material/Cached';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import WindowIcon from '@mui/icons-material/Window';
-import WhatshotIcon from '@mui/icons-material/Whatshot';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+// Icons
+import icons from "../../assets/icons";
 
 
 function Header() {
@@ -72,14 +65,14 @@ function Header() {
           <div>
             <input type="text" placeholder="Search for items..." />
             <button>
-              <SearchIcon className="i"/>
+              <icons.SearchIcon className="i"/>
             </button>
           </div>
         </div>
 
         <div class="right">
           <div>
-            <LocationOnIcon className="i"/>
+            <icons.LocationOnIcon className="i"/>
             <select name="" id="">
               <option value="egypt">Egypt</option>
               <option value="egypt">Egypt</option>
@@ -88,19 +81,19 @@ function Header() {
           </div>
           <ul>
             <li>
-                <CachedIcon className="i"/>
+                <icons.CachedIcon className="i"/>
                 <span>Compare</span>
             </li>
             <li>
-              <FavoriteBorderIcon className="i"/>
+              <icons.FavoriteBorderIcon className="i"/>
               <span>Wishlist</span>
             </li>
             <li>
-              <ShoppingCartCheckoutIcon className="i"/>
+              <icons.ShoppingCartCheckoutIcon className="i"/>
               <span>Cart</span>
             </li>
             <li>
-              <PersonOutlineIcon className="i"/>
+              <icons.PersonOutlineIcon className="i"/>
               <span>Account</span>
             </li>
           </ul>
@@ -111,7 +104,7 @@ function Header() {
             <div>
                 <div>
                     <div>
-                        <WindowIcon className="i"/>
+                        <icons.WindowIcon className="i"/>
                         <span>Browse</span>
                     </div>
                     <select name="" id="">
@@ -122,7 +115,7 @@ function Header() {
                 </div>
     
                 <div>
-                    <WhatshotIcon className="i"/>
+                    <icons.WhatshotIcon className="i"/>
                     <span>Deals</span>
                 </div>
     
@@ -184,7 +177,7 @@ function Header() {
             </div>
 
             <div>
-                <SupportAgentIcon className="i"/>
+                <icons.SupportAgentIcon className="i"/>
                 <div>
                     <h4>1900 - 888</h4>
                     <span>24/7 Support Center</span>
