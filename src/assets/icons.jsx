@@ -13,6 +13,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import StarIcon from '@mui/icons-material/Star';
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const icons = {
     SearchIcon,
@@ -28,7 +29,8 @@ const icons = {
     StarIcon,
     ShoppingCartCheckoutIcon,
     ArrowCircleLeftIcon,
-    ArrowCircleRightIcon
+    ArrowCircleRightIcon,
+    ArrowForwardIosIcon
 }
 
 export default icons
