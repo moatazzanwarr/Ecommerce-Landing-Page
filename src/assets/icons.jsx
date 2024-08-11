@@ -1,0 +1,36 @@
+// Imports
+import SearchIcon from '@mui/icons-material/Search';
+import CachedIcon from '@mui/icons-material/Cached';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import WindowIcon from '@mui/icons-material/Window';
+import WhatshotIcon from '@mui/icons-material/Whatshot';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import StarIcon from '@mui/icons-material/Star';
+import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
+const icons = {
+    SearchIcon,
+    CachedIcon,
+    LocationOnIcon,
+    FavoriteBorderIcon,
+    PersonOutlineIcon,
+    WindowIcon,
+    WhatshotIcon,
+    SupportAgentIcon,
+    ArrowBackIcon,
+    ArrowForwardIcon,
+    StarIcon,
+    ShoppingCartCheckoutIcon,
+    ArrowCircleLeftIcon,
+    ArrowCircleRightIcon,
+    ArrowForwardIosIcon
+}
+
+export default icons
