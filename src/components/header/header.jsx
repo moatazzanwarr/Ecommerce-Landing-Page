@@ -8,7 +8,7 @@ import Logo from "../../assets/images/Logo.png"
 import icons from "../../assets/icons";
 
 
-function Header() {
+function Header({cartLength}) {
   return (
     <header>
       <div class="top">
@@ -91,6 +91,7 @@ function Header() {
             <li>
               <icons.ShoppingCartCheckoutIcon className="i"/>
               <span>Cart</span>
+              <span>{cartLength}</span>
             </li>
             <li>
               <icons.PersonOutlineIcon className="i"/>

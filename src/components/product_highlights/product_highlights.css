@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    gap: 10px;
 }
 .product-highlights .product .item h4{
     font-size: 16px;

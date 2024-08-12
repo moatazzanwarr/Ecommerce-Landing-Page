@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header/>
+        <Header cartLength={2} />
         <Routes>
           <Route path="/" element={<Home/>}/>
         </Routes>
