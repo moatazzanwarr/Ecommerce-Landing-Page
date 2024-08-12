@@ -18,5 +18,10 @@
         "id": 4,
         "title": "Wide assortment",
         "type": "Orders $50 or more"
+    },
+    {
+        "id": 5,
+        "title": "Easy returns",
+        "type": "Within 30 days"
     }
 ]

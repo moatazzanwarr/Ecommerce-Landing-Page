@@ -8,7 +8,7 @@ import Logo from "../../assets/images/Logo.png"
 import icons from "../../assets/icons";
 
 
-function Header({cartLength}) {
+function Header({cartLength,openCart}) {
   return (
     <header>
       <div class="top">
@@ -88,10 +88,10 @@ function Header({cartLength}) {
               <icons.FavoriteBorderIcon className="i"/>
               <span>Wishlist</span>
             </li>
-            <li>
+            <li className="cart" onClick={openCart}>
               <icons.ShoppingCartCheckoutIcon className="i"/>
               <span>Cart</span>
-              <span>{cartLength}</span>
+              <span className="cartCounter">{cartLength}</span>
             </li>
             <li>
               <icons.PersonOutlineIcon className="i"/>

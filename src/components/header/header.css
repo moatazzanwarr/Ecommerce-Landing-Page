@@ -149,6 +149,22 @@ header .bottom .right>ul>li{
     gap: 5px;
     cursor: pointer;
 }
+header .bottom .right>ul>.cart{
+    position: relative;
+}
+header .bottom .right>ul .cartCounter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: #3BB77E;
+    color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+}
 
 header .bottom .right>ul>li>.i{
     color: #253D4E;

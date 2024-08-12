@@ -45,6 +45,10 @@
     border-radius: 7px;
 }
 
+.pop_product:hover{
+    box-shadow: 0 0 10px #c9c5c5;
+    transition: .2s ease;
+}
 .pop_product .img img{
     width: 100%;
 }

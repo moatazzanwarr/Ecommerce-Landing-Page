@@ -105,6 +105,10 @@
     border: 1px solid #ECECEC;
     border-radius: 7px;
 }
+.best_sells_product:hover{
+    box-shadow: 0 0 10px #c9c5c5;
+    transition: .2s ease;
+}
 
 .best_sells_product .img>img{
     width: 100%;
