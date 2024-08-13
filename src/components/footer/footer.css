@@ -90,3 +90,124 @@ footer .center .item span{
     font-size: 16px;
     color: #242424;
 }
+
+footer .boottom .lists{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #BCE3C9;
+    margin-bottom: 30px;
+}
+
+footer .boottom .lists>div:first-child h3{
+    font-size: 17px;
+    color: #253D4E;
+    margin: 20px 0 30px 0;
+    width: 250px;
+}
+footer .boottom .lists>div:first-child p{
+    font-size: 15px;
+    color: #253D4E;
+    margin-bottom: 15px;
+
+}
+footer .boottom .lists>div:first-child p>.i{
+    font-size: 15px;
+    color: #3BB77E;
+    margin-right: 5px;
+}
+footer .boottom .lists>div h4{
+    font-size: 24px;
+    color: #253D4E;
+    margin-bottom: 20px;
+}
+footer .boottom .lists>div ul{
+    list-style: none;
+}
+footer .boottom .lists>div ul>li{
+    margin-bottom: 12px;
+}
+footer .boottom .lists>div ul>li>a{
+    color: #253D4E;
+    font-size: 15px;
+    font-weight: 600;
+}
+footer .boottom .lists>div ul>li>a:hover{
+    color: #3BB77E;
+    transition: .2s ease;
+}
+footer .boottom .lists>div:last-child>p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #253D4E;
+    margin-bottom: 25px;
+}
+footer .boottom .lists>div:last-child>.download{
+    margin-bottom: 40px;
+}
+
+footer .boottom>div:last-child{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+footer .boottom>div:last-child>.left>p{
+    font-size: 14px;
+    color: #7E7E7E;
+}
+footer .boottom>div:last-child>.left>p>span{
+    color: #3BB77E;
+}
+
+footer .boottom>div:last-child>.center{
+    gap: 20px;
+}
+
+footer .boottom>div:last-child>.center>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .boottom>div:last-child>.center>div>.icon>.i{
+    color: #7E7E7E;
+    font-size: 40px;
+}
+footer .boottom>div:last-child>.center>div>.text>h4{
+    font-size: 24px;
+    color: #3BB77E;
+}
+footer .boottom>div:last-child>.center>div>.text>span{
+    font-size: 12px;
+    color: #7E7E7E;
+}
+
+footer .boottom>div:last-child>.right>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .boottom>div:last-child>.right>div>h4{
+    color: #253D4E;
+    font-size: 16px;
+}
+footer .boottom>div:last-child>.right>div>.links{
+    display: flex;
+    gap: 5px;
+}
+footer .boottom>div:last-child>.right>div>.links>div{
+    width: 33px;
+    height: 33px;
+    background: #3BB77E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+footer .boottom>div:last-child>.right>div>.links>div>a{
+    color: #FFF;
+}
+
+footer .boottom>div:last-child>.right>p{
+    font-size: 14px;
+    color: #7E7E7E;
+}

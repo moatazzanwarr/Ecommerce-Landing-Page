@@ -14,6 +14,15 @@ import StarIcon from '@mui/icons-material/Star';
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import SendIcon from '@mui/icons-material/Send';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CallIcon from '@mui/icons-material/Call';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const icons = {
     SearchIcon,
@@ -30,7 +39,16 @@ const icons = {
     ShoppingCartCheckoutIcon,
     ArrowCircleLeftIcon,
     ArrowCircleRightIcon,
-    ArrowForwardIosIcon
+    ArrowForwardIosIcon,
+    SendIcon,
+    AccessTimeIcon,
+    CallIcon,
+    YouTubeIcon,
+    InstagramIcon,
+    TwitterIcon,
+    PinterestIcon,
+    FacebookIcon,
+    DeleteIcon
 }
 
 export default icons

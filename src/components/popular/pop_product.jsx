@@ -4,7 +4,7 @@ import React from 'react'
 // Icons
 import icons from '../../assets/icons'
 
-function Pop_product({src,type,title,company,rate,price,previous}) {
+function Pop_product({src,type,title,company,rate,price,previous,onAddToCart}) {
   return (
     <div className='pop_product'>
       <div className="img">
@@ -20,7 +20,7 @@ function Pop_product({src,type,title,company,rate,price,previous}) {
         <p className='company'>By <span>{company}</span></p>
         <div className="price_add">
             <p><span>${price}</span><span>${previous}</span></p>
-            <div className="add">
+            <div className="add" onClick={onAddToCart}>
                 <icons.ShoppingCartCheckoutIcon className='i'/> <span>Add</span>
             </div>
         </div>

@@ -10,9 +10,9 @@ const openCart = ()=>{
 
 }
 
-const [add,setAdd] = useState([])
-const addToCart = ()=>{
-  setAdd([...add,])
+const [cart,setCart] = useState([])
+const addToCart = (product)=>{
+  setCart([...cart,product])
 }
   return (
     <div className="App">
