@@ -21,3 +21,18 @@
     color: rgb(255, 51, 0);
     cursor: pointer;
 }
+
+.cart .clear>button{
+    outline: none;
+    border: none;
+    color: #FFF;
+    background: rgb(197, 95, 95);
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.cart .clear>button:hover{
+    background: rgb(190, 63, 63);
+    transition: .2s ease;
+}

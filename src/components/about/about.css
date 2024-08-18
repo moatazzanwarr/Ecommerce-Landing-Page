@@ -1,0 +1,30 @@
+.about{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.about .bar{
+    height: 60px;
+}
+.about .bar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about .bar ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #7E7E7E;
+}
+.about .bar ul li:first-child a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #3BB77E;
+}
+
+.about .bar ul>.i{
+    font-size: 14px;
+    color: #7E7E7E;
+}

@@ -1,11 +1,20 @@
 // imports
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './cart.css' 
 
 // Icons
 import icons from '../../assets/icons'
 
 function CartProduct({src}) {
+    const [cart,setCart] = useState([])
+    const curentArray = localStorage.getItem("cart")
+    const curentArrayParse = JSON.parse(curentArray)
+    useEffect(()=>{
+      setCart(curentArrayParse)
+      return console.log(cart);
+    },[])
+    
+
   return (
     <div className='cart-product'>
       <div className="img">

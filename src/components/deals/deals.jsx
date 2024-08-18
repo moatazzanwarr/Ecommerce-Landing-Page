@@ -34,6 +34,7 @@ function Deals() {
             company={deal.company}
             price={deal.price}
             previous={deal.previous}
+            key={deal.id}
           />
         ))}
       </div>

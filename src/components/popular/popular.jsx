@@ -1,5 +1,5 @@
 // Imports
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./popular.css";
 import { NavLink } from "react-router-dom";
 import Pop_product from "./pop_product";
@@ -124,7 +124,15 @@ const productData = [
 
 function Popular() {
 
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(()=>{
+    const savedCart = localStorage.getItem("cart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  })
+
+  useEffect(()=>{
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("length", cart.length)
+  },[cart])
 
   const addToCart = (product)=>{
     setCart([...cart, product])
@@ -170,17 +178,10 @@ function Popular() {
             price={item.price}
             previous={item.previous}
             onAddToCart={()=>{addToCart(item)}}
+            key={item.id}
           />
           ))
         }
-
-        <div className="cart">
-          {
-            cart.map((item)=>(
-              <CartProduct src={item.src}/>
-            ))
-          }
-        </div>
       </div>
     </section>
   );

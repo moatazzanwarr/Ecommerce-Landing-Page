@@ -1,5 +1,5 @@
 // Imports
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './header.css'
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png"
@@ -7,15 +7,23 @@ import Logo from "../../assets/images/Logo.png"
 // Icons
 import icons from "../../assets/icons";
 
+// Cart
 
-function Header({cartLength,openCart}) {
+
+function Header({openCart}) {
+  const cartLength = localStorage.getItem("length");
+  const [length, setLength] = useState()
+  useEffect(()=>{
+    setLength(cartLength)
+  },)
+
   return (
     <header>
       <div class="top">
         <nav>
           <ul>
             <li>
-              <Link to="#">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
               <Link to="#">My Account</Link>
@@ -129,7 +137,7 @@ function Header({cartLength,openCart}) {
                 </div>
     
                 <div>
-                    <NavLink to="#">About</NavLink>
+                    <NavLink to="about">About</NavLink>
                 </div>
     
                 <div>

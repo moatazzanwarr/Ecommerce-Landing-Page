@@ -23,6 +23,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import DeleteIcon from '@mui/icons-material/Delete';
+import HomeIcon from '@mui/icons-material/Home';
+
 
 const icons = {
     SearchIcon,
@@ -48,7 +50,8 @@ const icons = {
     TwitterIcon,
     PinterestIcon,
     FacebookIcon,
-    DeleteIcon
+    DeleteIcon,
+    HomeIcon
 }
 
 export default icons

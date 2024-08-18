@@ -38,7 +38,7 @@ function ProductHighlights() {
         rate={d.rate}
         price={d.price}
         previous={d.previous}
-        
+        key={d.id}
         />
       ))}
     </section>

@@ -4,6 +4,8 @@ import './App.css';
 import Home from './components/home/home';
 import Header from './components/header/header';
 import { useState } from 'react';
+import About from './components/about/about';
+import Cart from './components/Cart/cart';
 
 function App() {
 const openCart = ()=>{
@@ -17,9 +19,12 @@ const addToCart = (product)=>{
   return (
     <div className="App">
       <BrowserRouter>
-        <Header cartLength={5} openCart={openCart}/>
+        <Header openCart={openCart}/>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/cart" element={<Cart/>}/>
+
         </Routes>
       </BrowserRouter>
     </div>

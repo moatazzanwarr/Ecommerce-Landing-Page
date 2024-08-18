@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "mainTitle":"Top Selling",
         "src": "../../assets/images/dealsBanner-1.png",
         "title": "Nestle Original Coffee-Mate Coffee Creamer",
@@ -9,6 +10,7 @@
         "previous": 32.02
     },
     {
+        "id": 2,
         "mainTitle":"Trending Products",
         "src": "../../assets/images/dealsBanner-2.png",
         "title": "Organic Cage-Free Grade A Large Brown Eggs",
@@ -18,6 +20,7 @@
         "previous": 32.02
     },
     {
+        "id": 3,
         "mainTitle":"Recently added",
         "src": "../../assets/images/dealsBanner-3.png",
         "title": "Pepperidge Farm Farmhouse Hearty White Bread",
@@ -27,6 +30,7 @@
         "previous": 32.02
     },
     {
+        "id": 4,
         "mainTitle":"Top Rated",
         "src": "../../assets/images/dealsBanner-4.png",
         "title": "Foster Farms Takeout Crispy Classic Buffalo Wings",

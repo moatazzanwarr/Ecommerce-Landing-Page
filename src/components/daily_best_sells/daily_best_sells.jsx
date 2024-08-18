@@ -17,51 +17,48 @@ import WestIcon from '@mui/icons-material/West';
 
 
 // Data
-const productData = {
-    src: [
-      product_1,
-      product_2,
-      product_3,
-      product_4,
-    ],
-    type:[
-      "snack",
-      "Hodo Foods",
-      "snack",
-      "Vegetables"
-    ],
-    title:[
-      "Seeds of Change Organic Quinoa, Brown, & Red Rice",
-      "All Natural Italian-Style Chicken Meatballs",
-      "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
-      "Foster Farms Takeout Crispy Classic Buffalo Wings"
-    ],
-    rate:[
-      "4.0",
-      "5.0",
-      "3.0",
-      "4.0"
-    ],
-    price:[
-      28.85,
-      28.85,
-      28.85,
-      28.85
-    ],
-    previous:[
-      32.02,
-      32.02,
-      32.02,
-      32.02
-    ],
-    sold:[
-        90,
-        90,
-        90,
-        90
-    ]
-  
-  };
+const productData = [
+  {
+    id: 1,
+    src: product_1,
+    type: "snack",
+    title: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+    rate: "4.0",
+    price: 28.85,
+    previous: 32.02,
+    sold: 90
+  },
+  {
+    id: 2,
+    src: product_2,
+    type: "Hodo Foods",
+    title: "All Natural Italian-Style Chicken Meatballs",
+    rate: "5.0",
+    price: 28.85,
+    previous: 32.02,
+    sold: 90
+  },
+  {
+    id: 3,
+    src: product_3,
+    type: "snack",
+    title: "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
+    rate: "4.0",
+    price: 28.85,
+    previous: 32.02,
+    sold: 90
+  },
+  {
+    id: 4,
+    src: product_4,
+    type: "Vegetables",
+    title: "Foster Farms Takeout Crispy Classic Buffalo Wings",
+    rate: "4.0",
+    price: 28.85,
+    previous: 32.02,
+    sold: 90
+  }
+];
 
 function Daily_best_sells() {
   return (
@@ -94,15 +91,16 @@ function Daily_best_sells() {
 
         <div className="slider">
             {
-                productData.src.map((src,i)=>(
+                productData.map((item,i)=>(
                     <Best_sells_product
-                        src={productData.src[i]}
-                        type={productData.type[i]}
-                        title={productData.title[i]}
-                        rate={productData.rate[i]}
-                        price={productData.price[i]}
-                        previous={productData.previous[i]}
-                        sold={productData.sold[i]}
+                        src={item.src}
+                        type={item.type}
+                        title={item.title}
+                        rate={item.rate}
+                        price={item.price}
+                        previous={item.previous}
+                        sold={item.sold}
+                        key={item.id}
                     />
                 ))
             }
