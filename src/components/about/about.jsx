@@ -11,6 +11,9 @@ import { Link } from 'react-router-dom'
 // Icons
 import icons from '../../assets/icons'
 
+// Images
+import main from "../../assets/images/MainAbout.png"
+
 function About() {
   return (
     <section className='about'>
@@ -32,6 +35,34 @@ function About() {
       <WelcomeToNest/>
       <WhatWeProvide/>
       <OurPerformance/>
+
+      <div className='counters'>
+        <div className="img">
+          <img src={main} alt="main" />
+        </div>
+        <div className="text">
+          <div>
+            <h1>0+</h1>
+            <h4>Glorious years</h4>
+          </div>
+          <div>
+            <h1>0+</h1>
+            <h4>Happy clients</h4>
+          </div>
+          <div>
+            <h1>0+</h1>
+            <h4>Projects complete</h4>
+          </div>
+          <div>
+            <h1>0+</h1>
+            <h4>Team advisor</h4>
+          </div>
+          <div>
+            <h1>0+</h1>
+            <h4>Products Sale</h4>
+          </div>
+        </div>
+      </div>
 
     <Footer/>
     </section>
