@@ -1,34 +1,53 @@
 // imports
-import React, { useEffect, useState } from 'react'
-import './cart.css' 
+import React, { useEffect, useState } from "react";
+import "./cart.css";
 
 // Icons
-import icons from '../../assets/icons'
+import icons from "../../assets/icons";
 
-function CartProduct({src}) {
-    const [cart,setCart] = useState([])
-    const curentArray = localStorage.getItem("cart")
-    const curentArrayParse = JSON.parse(curentArray)
-    useEffect(()=>{
-      setCart(curentArrayParse)
-      return console.log(cart);
-    },[])
-    
+function CartProduct({ src, title, rate, price }) {
+  const [cart, setCart] = useState([]);
+  const curentArray = localStorage.getItem("cart");
+  const curentArrayParse = JSON.parse(curentArray);
+  useEffect(() => {
+    setCart(curentArrayParse);
+    return console.log(cart);
+  }, []);
+
+  const [count, setCount] = useState(1);
 
   return (
-    <div className='cart-product'>
-      <div className="img">
-        <img src={src} alt="product" />
-      </div>
-      <h3>product</h3>
-      <button className="del" onClick={(e)=>{
-        e.target.remove()
-      }}>
-        <icons.DeleteIcon className='i'/>
-      </button>
-    
-    </div>
-  )
+    <tr className="cart-product">
+      <th>
+        <input type="checkbox" name="" id="" />
+      </th>
+      <th className="product">
+        <div className="img">
+          <img src={src} alt="product" />
+        </div>
+        <div className="text">
+          <p>{title}</p>
+          <span className="rate">
+            <icons.StarIcon className="i" />({rate})
+          </span>
+        </div>
+      </th>
+      <th className="price">${price}</th>
+      <th className="counter">
+        <div>{count}</div>
+        <div>
+          <icons.KeyboardArrowUpIcon className="i" onClick={()=>{setCount(count+1)}}/>
+          <icons.KeyboardArrowDownIcon className="i" onClick={()=>{setCount(count-1)}}/>
+        </div>
+      </th>
+
+      <th>{price * count}</th>
+
+      <th>
+        <icons.DeleteIcon className="i" />
+      </th>
+    </tr>
+  );
 }
 
-export default CartProduct
+export default CartProduct;

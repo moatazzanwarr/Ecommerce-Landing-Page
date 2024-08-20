@@ -24,7 +24,8 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import DeleteIcon from '@mui/icons-material/Delete';
 import HomeIcon from '@mui/icons-material/Home';
-
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const icons = {
     SearchIcon,
@@ -51,7 +52,9 @@ const icons = {
     PinterestIcon,
     FacebookIcon,
     DeleteIcon,
-    HomeIcon
+    HomeIcon,
+    KeyboardArrowUpIcon,
+    KeyboardArrowDownIcon
 }
 
 export default icons

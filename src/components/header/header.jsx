@@ -1,21 +1,20 @@
 // Imports
 import React, { useEffect, useState } from "react";
-import './header.css'
+import "./header.css";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../../assets/images/Logo.png"
+import Logo from "../../assets/images/Logo.png";
 
 // Icons
 import icons from "../../assets/icons";
 
 // Cart
 
-
-function Header({openCart}) {
+function Header({ openCart }) {
   const cartLength = localStorage.getItem("length");
-  const [length, setLength] = useState()
-  useEffect(()=>{
-    setLength(cartLength)
-  },)
+  const [length, setLength] = useState();
+  useEffect(() => {
+    setLength(cartLength);
+  });
 
   return (
     <header>
@@ -60,7 +59,9 @@ function Header({openCart}) {
       </div>
       <div class="bottom">
         <div class="left">
-          <Link to="/"><img src={Logo} alt="Logo" /></Link>
+          <Link to="/">
+            <img src={Logo} alt="Logo" />
+          </Link>
         </div>
 
         <div class="center">
@@ -73,14 +74,14 @@ function Header({openCart}) {
           <div>
             <input type="text" placeholder="Search for items..." />
             <button>
-              <icons.SearchIcon className="i"/>
+              <icons.SearchIcon className="i" />
             </button>
           </div>
         </div>
 
         <div class="right">
           <div>
-            <icons.LocationOnIcon className="i"/>
+            <icons.LocationOnIcon className="i" />
             <select name="" id="">
               <option value="egypt">Egypt</option>
               <option value="egypt">Egypt</option>
@@ -89,20 +90,24 @@ function Header({openCart}) {
           </div>
           <ul>
             <li>
-                <icons.CachedIcon className="i"/>
-                <span>Compare</span>
+              <icons.CachedIcon className="i" />
+              <span>Compare</span>
             </li>
             <li>
-              <icons.FavoriteBorderIcon className="i"/>
-              <span>Wishlist</span>
+              <Link to="">
+                <icons.FavoriteBorderIcon className="i" />
+                <span>Wishlist</span>
+              </Link>
             </li>
             <li className="cart" onClick={openCart}>
-              <icons.ShoppingCartCheckoutIcon className="i"/>
-              <span>Cart</span>
-              <span className="cartCounter">{cartLength}</span>
+              <Link to="/cart">
+                <icons.ShoppingCartCheckoutIcon className="i" />
+                <span>Cart</span>
+                <span className="cartCounter">{cartLength}</span>
+              </Link>
             </li>
             <li>
-              <icons.PersonOutlineIcon className="i"/>
+              <icons.PersonOutlineIcon className="i" />
               <span>Account</span>
             </li>
           </ul>
@@ -110,89 +115,89 @@ function Header({openCart}) {
       </div>
 
       <div className="pages">
+        <div>
+          <div>
             <div>
-                <div>
-                    <div>
-                        <icons.WindowIcon className="i"/>
-                        <span>Browse</span>
-                    </div>
-                    <select name="" id="">
-                        <option value="All Categories">All Categories</option>
-                        <option value="All Categories">All Categories</option>
-                        <option value="All Categories">All Categories</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <icons.WhatshotIcon className="i"/>
-                    <span>Deals</span>
-                </div>
-    
-                <div>
-                    <select name="" id="">
-                        <option value="home">Home</option>
-                        <option value="home">Home</option>
-                        <option value="home">Home</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <NavLink to="about">About</NavLink>
-                </div>
-    
-                <div>
-                    <select name="" id="">
-                        <option value="shop">Shop</option>
-                        <option value="shop">Shop</option>
-                        <option value="shop">Shop</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <select name="" id="">
-                        <option value="vendors">Vendors</option>
-                        <option value="vendors">Vendors</option>
-                        <option value="vendors">Vendors</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <select name="" id="">
-                        <option value="mega menu">Mega menu</option>
-                        <option value="mega menu">Mega menu</option>
-                        <option value="mega menu">Mega menu</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <select name="" id="">
-                        <option value="blog">Blog</option>
-                        <option value="blog">Blog</option>
-                        <option value="blog">Blog</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <select name="" id="">
-                        <option value="pages">Pages</option>
-                        <option value="pages">Pages</option>
-                        <option value="pages">Pages</option>
-                    </select>
-                </div>
-    
-                <div>
-                    <NavLink to="/contact">Contact</NavLink>
-                </div>
+              <icons.WindowIcon className="i" />
+              <span>Browse</span>
             </div>
+            <select name="" id="">
+              <option value="All Categories">All Categories</option>
+              <option value="All Categories">All Categories</option>
+              <option value="All Categories">All Categories</option>
+            </select>
+          </div>
 
-            <div>
-                <icons.SupportAgentIcon className="i"/>
-                <div>
-                    <h4>1900 - 888</h4>
-                    <span>24/7 Support Center</span>
-                </div>
-            </div>
+          <div>
+            <icons.WhatshotIcon className="i" />
+            <span>Deals</span>
+          </div>
+
+          <div>
+            <select name="" id="">
+              <option value="home">Home</option>
+              <option value="home">Home</option>
+              <option value="home">Home</option>
+            </select>
+          </div>
+
+          <div>
+            <NavLink to="about">About</NavLink>
+          </div>
+
+          <div>
+            <select name="" id="">
+              <option value="shop">Shop</option>
+              <option value="shop">Shop</option>
+              <option value="shop">Shop</option>
+            </select>
+          </div>
+
+          <div>
+            <select name="" id="">
+              <option value="vendors">Vendors</option>
+              <option value="vendors">Vendors</option>
+              <option value="vendors">Vendors</option>
+            </select>
+          </div>
+
+          <div>
+            <select name="" id="">
+              <option value="mega menu">Mega menu</option>
+              <option value="mega menu">Mega menu</option>
+              <option value="mega menu">Mega menu</option>
+            </select>
+          </div>
+
+          <div>
+            <select name="" id="">
+              <option value="blog">Blog</option>
+              <option value="blog">Blog</option>
+              <option value="blog">Blog</option>
+            </select>
+          </div>
+
+          <div>
+            <select name="" id="">
+              <option value="pages">Pages</option>
+              <option value="pages">Pages</option>
+              <option value="pages">Pages</option>
+            </select>
+          </div>
+
+          <div>
+            <NavLink to="/contact">Contact</NavLink>
+          </div>
         </div>
+
+        <div>
+          <icons.SupportAgentIcon className="i" />
+          <div>
+            <h4>1900 - 888</h4>
+            <span>24/7 Support Center</span>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

@@ -1,38 +1,142 @@
+.cart{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cart .bar{
+    height: 60px;
+}
+.cart .bar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cart .bar ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #7E7E7E;
+}
+.cart .bar ul li:first-child a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #3BB77E;
+}
+
+.cart .bar ul>.i{
+    font-size: 14px;
+    color: #7E7E7E;
+}
+
 .cart-product{
+    /* display: flex;
+    align-items: center;
+    gap: 20px; */
+}
+
+.cart-product .img{
+    width: 80px;
+    height: 80px;
+}
+.cart-product .img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.cart .container {
+
+}
+
+.cart .container>h1{
+    font-size: 40px;
+    color: #253D4E;
+    margin-bottom: 10px;
+}
+
+.cart .container>div:nth-child(2){
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.cart .container>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #7E7E7E;
+    font-size: 14px;
+    cursor: pointer;
+}
+.cart .container>div:nth-child(2)>p{
+    font-size: 14px;
+    color: #646464;
+}
+.cart .container>div:nth-child(2)>p>span{
+    color: #3BB77E;
+}
+.cart .container>div:nth-child(2)>div:hover,.cart .container>div:nth-child(2)>div:hover>.i{
+    color: rgb(221, 118, 118);
+    transition: .2s ease;
+}
+.cart .container>div:nth-child(2)>div>.i{
+    color: #7E7E7E;
+    font-size: 18px;
+}
+
+.cart .container table{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.cart .container table>.title{
+    height: 60px;
+
+}
+
+.cart .container table>.title>th>h1{
+    font-size: 20px;
+    color: #253D4E;
+}
+
+.cart .container table tr{
+    width: 100%;
+
+}
+.cart .container table tr>.product{
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.cart-product .img{
-    width: 50px;
-    height: 50px;
-
-}
-.cart-product .img img{
-    width: 100%;
-    height: 100%;
-
-}
-.cart-product button{
-    outline: none;
-    border: none;
-    background: transparent;
-    color: rgb(255, 51, 0);
-    cursor: pointer;
+.cart .container table tr>.product>.text>p{
+    font-size: 16px;
+    color: #253D4E;
 }
 
-.cart .clear>button{
-    outline: none;
-    border: none;
-    color: #FFF;
-    background: rgb(197, 95, 95);
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 7px;
-    cursor: pointer;
+.cart .container table tr>.product>.text>.rate{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #646464;
 }
-.cart .clear>button:hover{
-    background: rgb(190, 63, 63);
-    transition: .2s ease;
+.cart .container table tr>.product>.text>.rate>.i{
+    color: gold;
 }
+
+.cart .container table tr>.price{
+    color: #646464;
+    font-size: 20px;
+}
+.cart .container table tr>.counter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart .container table tr>.counter>div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+

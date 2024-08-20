@@ -145,6 +145,12 @@ header .bottom .right>ul>li{
     gap: 5px;
     cursor: pointer;
 }
+header .bottom .right>ul>li>a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
 header .bottom .right>ul>.cart{
     position: relative;
 }
@@ -162,7 +168,7 @@ header .bottom .right>ul .cartCounter{
     left: 15px;
 }
 
-header .bottom .right>ul>li>.i{
+header .bottom .right>ul>li>.i,header .bottom .right>ul>li>a>.i{
     color: #253D4E;
     font-size: 25px;
     position: relative;
