@@ -33,6 +33,13 @@
     position: relative;
     margin: 50px 0;
 }
+
+.about .counters>.img{
+    width: 100%;
+}
+.about .counters>.img>img{
+    width: 100%;
+}
 .about>.counters>.text{
     width: 100%;
     position: absolute;
@@ -52,4 +59,11 @@
     font-size: 24px;
     font-weight: bold;
     color: #FFF;
+}
+
+.about .mainTitle{
+        font-size: 40px;
+        color: #253D4E;
+        text-align: center;
+        margin-bottom: 50px;
 }

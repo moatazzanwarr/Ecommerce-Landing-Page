@@ -114,10 +114,6 @@ header .bottom .center button .i{
     color: #7E7E7E;
 }
 
-header .bottom .center button .i::after{
-
-}
-
 /* Header Right */
 header .bottom .right>div:first-child {
     width: 80px;

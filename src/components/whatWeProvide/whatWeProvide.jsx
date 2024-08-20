@@ -19,7 +19,7 @@ const src = [img_1,img_2,img_3,img_4,img_5,img_6]
 function WhatWeProvide() {
   return (
     <div className='whatWeProvide'>
-      <h1>What We Provide?</h1>
+      <h1 className='mainTitle'>What We Provide?</h1>
       <div className="services">
         {
             data.map((item,index)=>(

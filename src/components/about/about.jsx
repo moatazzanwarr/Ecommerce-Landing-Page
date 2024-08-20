@@ -4,6 +4,7 @@ import './about.css'
 import WelcomeToNest from '../welcomeToNest/welcomeToNest'
 import WhatWeProvide from '../whatWeProvide/whatWeProvide'
 import OurPerformance from '../ourPerformance/ourPerformance'
+import OurTeam from '../ourTeam/ourTeam'
 
 import Footer from '../footer/footer'
 import { Link } from 'react-router-dom'
@@ -63,6 +64,8 @@ function About() {
           </div>
         </div>
       </div>
+
+      <OurTeam/>
 
     <Footer/>
     </section>

@@ -60,7 +60,7 @@ function Header({openCart}) {
       </div>
       <div class="bottom">
         <div class="left">
-          <img src={Logo} alt="Logo" />
+          <Link to="/"><img src={Logo} alt="Logo" /></Link>
         </div>
 
         <div class="center">
@@ -181,7 +181,7 @@ function Header({openCart}) {
                 </div>
     
                 <div>
-                    <NavLink to="#">Contact</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </div>
             </div>
 
