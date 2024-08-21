@@ -3,7 +3,7 @@ import React from "react";
 import "./contact.css";
 import ContactHelp from "../contactHelp/contactHelp";
 import ContactForm from "../contactForm/contactForm";
-import Footer from "../footer/footer";
+
 
 import { Link } from "react-router-dom";
 
@@ -88,7 +88,6 @@ function Contact() {
 
       <ContactForm/>
 
-      <Footer/>
     </section>
   );
 }

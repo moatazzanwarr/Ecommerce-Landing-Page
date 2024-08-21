@@ -17,11 +17,11 @@ function CartProduct({ src, title, rate, price }) {
   const [count, setCount] = useState(1);
 
   return (
-    <tr className="cart-product">
-      <th>
+    <ul className="cart-product">
+      <li>
         <input type="checkbox" name="" id="" />
-      </th>
-      <th className="product">
+      </li>
+      <li className="product">
         <div className="img">
           <img src={src} alt="product" />
         </div>
@@ -31,22 +31,22 @@ function CartProduct({ src, title, rate, price }) {
             <icons.StarIcon className="i" />({rate})
           </span>
         </div>
-      </th>
-      <th className="price">${price}</th>
-      <th className="counter">
+      </li>
+      <li className="price">${price}</li>
+      <li className="counter">
         <div>{count}</div>
         <div>
           <icons.KeyboardArrowUpIcon className="i" onClick={()=>{setCount(count+1)}}/>
           <icons.KeyboardArrowDownIcon className="i" onClick={()=>{setCount(count-1)}}/>
         </div>
-      </th>
+      </li>
 
-      <th>{price * count}</th>
+      <li>{price * count}</li>
 
-      <th>
+      <li>
         <icons.DeleteIcon className="i" />
-      </th>
-    </tr>
+      </li>
+    </ul>
   );
 }
 

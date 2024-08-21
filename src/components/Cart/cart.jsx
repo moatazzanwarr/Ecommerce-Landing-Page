@@ -1,5 +1,5 @@
 // Imports
-import React from "react";
+import React, { useState } from "react";
 import "./cart.css";
 import CartProduct from "./cartProduct";
 
@@ -12,7 +12,9 @@ const cartstorage = localStorage.getItem("cart");
 const cartStorageParse = JSON.parse(cartstorage);
 
 function Cart() {
-  const clearAll = () => {};
+  const [total, setTotal] = useState(50);
+  const [estimate, setEstimate] = useState("Egypt");
+
   return (
     <section className="cart">
       <div className="bar">
@@ -47,31 +49,101 @@ function Cart() {
           </div>
         </div>
 
-        <div>
-          <table>
-
-              <tr className="title">
-                <th>
+        <div className="container-2">
+          <div className="left">
+            <div className="table">
+              <ul className="title">
+                <li>
                   <input type="checkbox" name="" id="" />
-                </th>
-                <th><h1>Product</h1></th>
-                <th><h1>Unit Price</h1></th>
-                <th><h1>Quantity</h1></th>
-                <th><h1>Subtotal</h1></th>
-                <th><h1>Remove</h1></th>
-              </tr>
+                </li>
+                <li>
+                  <h1>Product</h1>
+                </li>
+                <li>
+                  <h1>Unit Price</h1>
+                </li>
+                <li>
+                  <h1>Quantity</h1>
+                </li>
+                <li>
+                  <h1>Subtotal</h1>
+                </li>
+                <li>
+                  <h1>Remove</h1>
+                </li>
+              </ul>
 
               {cartStorageParse.map((item) => (
-                <CartProduct key={item.id} src={item.src}  
-                title={item.title}
-                rate={item.rate}
-                price={item.price}
+                <CartProduct
+                  key={item.id}
+                  src={item.src}
+                  title={item.title}
+                  rate={item.rate}
+                  price={item.price}
                 />
               ))}
+            </div>
 
-          </table>
+            <div>
+              <div className="btns">
+                <Link to="#"><icons.ArrowBackIcon className="i"/>Continue Shopping</Link>
+                <button><icons.CachedIcon className="i"/>Update Cart</button>
+              </div>
+
+              <div className="bottom">
+                <div className="left">
+                  <h3>Calculate Shipping</h3>
+                  <p>Flat rate:<span>5%</span></p>
+                  <select name="" id="">
+                    <option value="egypt">Egypt</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="egypt">Egypt</option>
+                  </select>
+                  <div>
+                    <input type="text" placeholder="State / Country"/>
+                    <input type="text" placeholder="PostCode / ZIP"/>
+                  </div>
+                </div>
+                <div className="right">
+                  <h3>Apply Coupon</h3>
+                  <p>Using A Promo Code?</p>
+                  <div>
+                    <input type="text" placeholder="Enter Your Coupon"/>
+                    <button><icons.LocalMallIcon className="i"/>Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="right all-info">
+            <div className="data">
+              <div>
+                <span>Subtotal</span>
+                <span className="total">${total}</span>
+              </div>
+              <div>
+                <span>Shipping</span>
+                <span>Free</span>
+              </div>
+              <div>
+                <span>Estimate for</span>
+                <span>{estimate}</span>
+              </div>
+              <div>
+                <span>Total</span>
+                <span className="total">${total}</span>
+              </div>
+            </div>
+            <div className="btn">
+              <button>Proceed To CheckOut <icons.LogoutIcon className="i"/></button>
+            </div>
+          </div>
         </div>
+
       </section>
+
+      
     </section>
   );
 }

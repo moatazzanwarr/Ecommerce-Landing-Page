@@ -6,7 +6,6 @@ import WhatWeProvide from '../whatWeProvide/whatWeProvide'
 import OurPerformance from '../ourPerformance/ourPerformance'
 import OurTeam from '../ourTeam/ourTeam'
 
-import Footer from '../footer/footer'
 import { Link } from 'react-router-dom'
 
 // Icons
@@ -66,8 +65,6 @@ function About() {
       </div>
 
       <OurTeam/>
-
-    <Footer/>
     </section>
   )
 }

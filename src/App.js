@@ -8,6 +8,7 @@ import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Cart from './components/Cart/cart';
 import Test from './components/test/test';
+import Footer from './components/footer/footer';
 
 function App() {
 const openCart = ()=>{
@@ -30,6 +31,7 @@ const addToCart = (product)=>{
 
           <Route path="/cart" element={<Cart/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

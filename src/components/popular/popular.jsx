@@ -67,7 +67,7 @@ const productData = [
     title: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
     rate: "4.0",
     company: "NestFood",
-    price: 28.85,
+    price: 28,
     previous: 32.02
   },
   {
@@ -77,7 +77,7 @@ const productData = [
     title: "All Natural Italian-Style Chicken Meatballs",
     rate: "5.0",
     company: "Stouffer",
-    price: 28.85,
+    price: 28,
     previous: 32.02
   },
   {
@@ -87,7 +87,7 @@ const productData = [
     title: "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
     rate: "4.0",
     company: "StarKist",
-    price: 28.85,
+    price: 28,
     previous: 32.02
   },
   {
@@ -97,7 +97,7 @@ const productData = [
     title: "Foster Farms Takeout Crispy Classic Buffalo Wings",
     rate: "4.0",
     company: "NestFood",
-    price: 28.85,
+    price: 28,
     previous: 32.02
   },
   {
@@ -107,7 +107,7 @@ const productData = [
     title: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
     rate: "4.0",
     company: "NestFood",
-    price: 28.85,
+    price: 28,
     previous: 32.02
   },
   {
@@ -117,7 +117,7 @@ const productData = [
     title: "All Natural Italian-Style Chicken Meatballs",
     rate: "5.0",
     company: "Stouffer",
-    price: 28.85,
+    price: 28,
     previous: 32.02
   },
 ];

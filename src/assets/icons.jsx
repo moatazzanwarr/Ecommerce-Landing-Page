@@ -26,6 +26,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import HomeIcon from '@mui/icons-material/Home';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import LogoutIcon from '@mui/icons-material/Logout';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const icons = {
     SearchIcon,
@@ -54,7 +56,9 @@ const icons = {
     DeleteIcon,
     HomeIcon,
     KeyboardArrowUpIcon,
-    KeyboardArrowDownIcon
+    KeyboardArrowDownIcon,
+    LogoutIcon,
+    LocalMallIcon
 }
 
 export default icons
