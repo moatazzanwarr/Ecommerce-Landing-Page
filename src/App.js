@@ -7,8 +7,10 @@ import { useState } from 'react';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Cart from './components/Cart/cart';
-import Test from './components/test/test';
+import CreateAccount from './components/createAccount/createAccount';
+import SignIn from './components/signIn/signIn';
 import Footer from './components/footer/footer';
+import Test from './components/test/test';
 
 function App() {
 const openCart = ()=>{
@@ -30,6 +32,8 @@ const addToCart = (product)=>{
           <Route path="/test" element={<Test/>}/>
 
           <Route path="/cart" element={<Cart/>}/>
+          <Route path="/createAccount" element={<CreateAccount/>}/>
+          <Route path="/signIn" element={<SignIn/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

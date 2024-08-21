@@ -28,6 +28,7 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LogoutIcon from '@mui/icons-material/Logout';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
+import GoogleIcon from '@mui/icons-material/Google';
 
 const icons = {
     SearchIcon,
@@ -58,7 +59,8 @@ const icons = {
     KeyboardArrowUpIcon,
     KeyboardArrowDownIcon,
     LogoutIcon,
-    LocalMallIcon
+    LocalMallIcon,
+    GoogleIcon
 }
 
 export default icons
