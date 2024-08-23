@@ -354,7 +354,7 @@
 .cart .container .all-info>.data>div>.total{
     color: #3BB77E !important;
 }
-.cart .container .all-info>.btn>button{
+.cart .container .all-info>.btn>a{
     height: 45px;
     width: 100%;
     display: flex;
@@ -368,7 +368,7 @@
     cursor: pointer;
     margin-top: 10px;
 }
-.cart .container .all-info>.btn>button:hover{
+.cart .container .all-info>.btn>a:hover{
     transition: .2s ease;
     opacity: .9;
 }

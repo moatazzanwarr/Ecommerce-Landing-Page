@@ -136,7 +136,7 @@ function Cart() {
               </div>
             </div>
             <div className="btn">
-              <button>Proceed To CheckOut <icons.LogoutIcon className="i"/></button>
+              <Link to="/checkOut">Proceed To CheckOut <icons.LogoutIcon className="i"/></Link>
             </div>
           </div>
         </div>

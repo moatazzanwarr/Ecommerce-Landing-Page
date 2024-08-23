@@ -9,6 +9,7 @@ import Contact from './components/contact/contact';
 import Cart from './components/Cart/cart';
 import CreateAccount from './components/createAccount/createAccount';
 import SignIn from './components/signIn/signIn';
+import CheckOut from './components/checkOut/checkOut';
 import Footer from './components/footer/footer';
 import Test from './components/test/test';
 
@@ -34,6 +35,7 @@ const addToCart = (product)=>{
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/createAccount" element={<CreateAccount/>}/>
           <Route path="/signIn" element={<SignIn/>}/>
+          <Route path="/checkOut" element={<CheckOut/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
