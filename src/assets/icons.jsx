@@ -30,6 +30,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import GoogleIcon from '@mui/icons-material/Google';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import ShuffleIcon from '@mui/icons-material/Shuffle';
 
 const icons = {
     SearchIcon,
@@ -62,7 +63,8 @@ const icons = {
     LogoutIcon,
     LocalMallIcon,
     GoogleIcon,
-    LocalOfferIcon
+    LocalOfferIcon,
+    ShuffleIcon
 }
 
 export default icons

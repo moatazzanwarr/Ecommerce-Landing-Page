@@ -10,8 +10,8 @@ import Cart from './components/Cart/cart';
 import CreateAccount from './components/createAccount/createAccount';
 import SignIn from './components/signIn/signIn';
 import CheckOut from './components/checkOut/checkOut';
+import ProductView from './components/singleProduct/productView';
 import Footer from './components/footer/footer';
-import Test from './components/test/test';
 
 function App() {
 const openCart = ()=>{
@@ -30,12 +30,12 @@ const addToCart = (product)=>{
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
-          <Route path="/test" element={<Test/>}/>
 
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/createAccount" element={<CreateAccount/>}/>
           <Route path="/signIn" element={<SignIn/>}/>
           <Route path="/checkOut" element={<CheckOut/>}/>
+          <Route path="/productView/:id" element={<ProductView/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
@@ -43,4 +43,18 @@ const addToCart = (product)=>{
   );
 }
 
+
 export default App;
+
+// // http://localhost:3000/products.json
+
+// main_src
+// title
+// price
+// discount
+// info
+// other_src [ ]
+// size [ ]
+// description_info
+// details{ }
+// rate

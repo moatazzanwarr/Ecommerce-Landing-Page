@@ -1,10 +1,10 @@
 // Imports
 import React from 'react'
 import './about.css'
-import WelcomeToNest from '../welcomeToNest/welcomeToNest'
-import WhatWeProvide from '../whatWeProvide/whatWeProvide'
-import OurPerformance from '../ourPerformance/ourPerformance'
-import OurTeam from '../ourTeam/ourTeam'
+import WelcomeToNest from './welcomeToNest/welcomeToNest'
+import WhatWeProvide from './whatWeProvide/whatWeProvide'
+import OurPerformance from './ourPerformance/ourPerformance'
+import OurTeam from './ourTeam/ourTeam'
 
 import { Link } from 'react-router-dom'
 

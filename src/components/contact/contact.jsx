@@ -2,7 +2,7 @@
 import React from "react";
 import "./contact.css";
 import ContactHelp from "../contactHelp/contactHelp";
-import ContactForm from "../contactForm/contactForm";
+import ContactForm from "./contactForm/contactForm";
 
 
 import { Link } from "react-router-dom";

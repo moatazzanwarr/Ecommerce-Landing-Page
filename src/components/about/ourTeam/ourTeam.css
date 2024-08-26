@@ -1,0 +1,85 @@
+.ourTeam{
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+.ourTeam>.container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.ourTeam>.container>.text{
+    width: 40%;
+}
+.ourTeam>.container>.text>h5{
+    font-size: 16px;
+    color: #3BB77E;
+}
+.ourTeam>.container>.text>h2{
+    font-size: 35px;
+    color: #253D4E;
+    margin-bottom: 30px;
+    width: 80%;
+}
+.ourTeam>.container>.text>p{
+    font-size: 16px;
+    color: #7E7E7E;
+    margin-bottom: 35px;
+}
+.ourTeam>.container>.text>a{
+    font-size: 14px;
+    color: #FFF;
+    padding: 10px 30px;
+    background: #3BB77E;
+    border-radius: 4px;
+}
+
+.ourTeam>.container>.text>a:hover{
+    transition: .2s ease;
+    opacity: .9;
+}
+.ourTeam>.container>.cards{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.ourTeam>.container>.cards .OurTeamCard>.img{
+    width: 300px;
+}
+.ourTeam>.container>.cards .OurTeamCard>.img>img{
+    width: 100%;
+}
+
+.ourTeam>.container>.cards .OurTeamCard>.text{
+    width: 80%;
+    background: #FFF;
+    padding: 30px;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    margin-top: -60px;
+    position: relative;
+    box-shadow: 0 0 10px #e7e5e5;
+}
+.ourTeam>.container>.cards .OurTeamCard>.text>h3{
+    text-align: center;
+    font-size: 24px;
+    color: #253D4E;
+    margin-bottom: 5px;
+}
+.ourTeam>.container>.cards .OurTeamCard>.text>h5{
+    text-align: center;
+    font-size: 17px;
+    color: #7E7E7E;
+    margin-bottom: 12px;
+}
+
+.ourTeam>.container>.cards .social{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: fit-content;
+    margin: auto;
+}
+.ourTeam>.container>.cards .social>div>a>.i{
+    color: #3BB77E;
+}
