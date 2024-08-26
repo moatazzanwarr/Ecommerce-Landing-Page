@@ -3,25 +3,25 @@ import React from "react";
 import "./categories.css";
 
 import Card from "./card";
-import cart_1 from "../../assets/images/cart-1.png";
-import cart_2 from "../../assets/images/cart-2.png";
-import cart_3 from "../../assets/images/cart-3.png";
-import cart_4 from "../../assets/images/cart-4.png";
-import cart_5 from "../../assets/images/cart-5.png";
-import cart_6 from "../../assets/images/cart-6.png";
-import cart_7 from "../../assets/images/cart-7.png";
-import cart_8 from "../../assets/images/cart-8.png";
-import cart_9 from "../../assets/images/cart-9.png";
-import cart_10 from "../../assets/images/cart-10.png";
+import cart_1 from "../../../assets/images/cart-1.png";
+import cart_2 from "../../../assets/images/cart-2.png";
+import cart_3 from "../../../assets/images/cart-3.png";
+import cart_4 from "../../../assets/images/cart-4.png";
+import cart_5 from "../../../assets/images/cart-5.png";
+import cart_6 from "../../../assets/images/cart-6.png";
+import cart_7 from "../../../assets/images/cart-7.png";
+import cart_8 from "../../../assets/images/cart-8.png";
+import cart_9 from "../../../assets/images/cart-9.png";
+import cart_10 from '../../../assets/images/cart-10.png';
 
 import Banner from "./banner";
-import banner_bg_1 from "../../assets/images/banner-1.png.png";
-import banner_bg_2 from "../../assets/images/banner-2.png.png";
-import banner_bg_3 from "../../assets/images/banner-3.png.png";
+import banner_bg_1 from "../../../assets/images/banner-1.png.png";
+import banner_bg_2 from "../../../assets/images/banner-2.png.png";
+import banner_bg_3 from "../../../assets/images/banner-3.png.png";
 import { NavLink } from "react-router-dom";
 
 // Icons
-import icons from "../../assets/icons";
+import icons from "../../../assets/icons";
 
 
 

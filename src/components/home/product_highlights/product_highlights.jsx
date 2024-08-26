@@ -5,18 +5,18 @@ import Product from "./product";
 
 
 // Images 
-import thumbnail_1 from '../../assets/images/thumbnail-1.png'
-import thumbnail_2 from '../../assets/images/thumbnail-2.png'
-import thumbnail_3 from '../../assets/images/thumbnail-3.png'
-import thumbnail_4 from '../../assets/images/thumbnail-4.png'
-import thumbnail_5 from '../../assets/images/thumbnail-5.png'
-import thumbnail_6 from '../../assets/images/thumbnail-6.png'
-import thumbnail_7 from '../../assets/images/thumbnail-7.png'
-import thumbnail_8 from '../../assets/images/thumbnail-8.png'
-import thumbnail_9 from '../../assets/images/thumbnail-9.png'
-import thumbnail_10 from '../../assets/images/thumbnail-10.png'
-import thumbnail_11 from '../../assets/images/thumbnail-11.png'
-import thumbnail_12 from '../../assets/images/thumbnail-12.png'
+import thumbnail_1 from '../../../assets/images/thumbnail-1.png'
+import thumbnail_2 from '../../../assets/images/thumbnail-2.png'
+import thumbnail_3 from '../../../assets/images/thumbnail-3.png'
+import thumbnail_4 from '../../../assets/images/thumbnail-4.png'
+import thumbnail_5 from '../../../assets/images/thumbnail-5.png'
+import thumbnail_6 from '../../../assets/images/thumbnail-6.png'
+import thumbnail_7 from '../../../assets/images/thumbnail-7.png'
+import thumbnail_8 from '../../../assets/images/thumbnail-8.png'
+import thumbnail_9 from '../../../assets/images/thumbnail-9.png'
+import thumbnail_10 from '../../../assets/images/thumbnail-10.png'
+import thumbnail_11 from '../../../assets/images/thumbnail-11.png'
+import thumbnail_12 from '../../../assets/images/thumbnail-12.png'
 
 // Data
 import data from "./data.json";

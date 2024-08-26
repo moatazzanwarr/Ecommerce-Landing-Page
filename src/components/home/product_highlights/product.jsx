@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Icons
-import icons from '../../assets/icons'
+import icons from '../../../assets/icons'
 
 function Product({mainTitle,src_1,src_2,src_3,title,rate,price,previous}) {
   return (

@@ -6,13 +6,13 @@ import data from "./data.json";
 import { Link } from "react-router-dom";
 
 // Images
-import dealsBanner_1 from "../../assets/images/dealsBanner-1.png";
-import dealsBanner_2 from "../../assets/images/dealsBanner-2.png";
-import dealsBanner_3 from "../../assets/images/dealsBanner-3.png";
-import dealsBanner_4 from "../../assets/images/dealsBanner-4.png";
+import dealsBanner_1 from "../../../assets/images/dealsBanner-1.png";
+import dealsBanner_2 from "../../../assets/images/dealsBanner-2.png";
+import dealsBanner_3 from "../../../assets/images/dealsBanner-3.png";
+import dealsBanner_4 from "../../../assets/images/dealsBanner-4.png";
 
 // Icons
-import icons from "../../assets/icons";
+import icons from "../../../assets/icons";
 
 let bannerSrc = [dealsBanner_1, dealsBanner_2, dealsBanner_3, dealsBanner_4];
 

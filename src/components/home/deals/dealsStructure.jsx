@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Icons
-import icons from '../../assets/icons'
+import icons from '../../../assets/icons'
 
 function DealsStructure({src,title,rate,company,price,previous}) {
   return (
