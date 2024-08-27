@@ -142,15 +142,11 @@ function Header({ openCart }) {
           </div>
 
           <div>
-            <NavLink to="about">About</NavLink>
+            <NavLink to="/about">About</NavLink>
           </div>
 
           <div>
-            <select name="" id="">
-              <option value="shop">Shop</option>
-              <option value="shop">Shop</option>
-              <option value="shop">Shop</option>
-            </select>
+          <NavLink to="/shop">Shop</NavLink>
           </div>
 
           <div>

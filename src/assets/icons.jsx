@@ -31,6 +31,7 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 import GoogleIcon from '@mui/icons-material/Google';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
+import CloseIcon from '@mui/icons-material/Close';
 
 const icons = {
     SearchIcon,
@@ -64,7 +65,8 @@ const icons = {
     LocalMallIcon,
     GoogleIcon,
     LocalOfferIcon,
-    ShuffleIcon
+    ShuffleIcon,
+    CloseIcon
 }
 
 export default icons

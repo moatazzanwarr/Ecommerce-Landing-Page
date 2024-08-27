@@ -1,0 +1,109 @@
+.shop{
+    width: 85%;
+    margin: 0 auto 0 auto;
+}
+
+.shop>.mainImg{
+    background-image: url('../../assets/images/mainShop.png');
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.shop>.mainImg>.left{
+    height: fit-content;
+    width: fit-content;
+}
+.shop>.mainImg>.left>h1{
+    height: 70px;
+    font-size: 45px;
+    color: #253D4E;
+}
+.shop>.mainImg>.left>div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7E7E7E;
+}
+.shop>.mainImg>.left>div>span{
+    margin: 0 15px;
+}
+.shop>.mainImg>.left>div>a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #3BB77E;
+    font-size: 14px;
+}
+.shop>.mainImg>.left>div>.i{
+    font-size: 12px;
+    color: #7E7E7E;
+}
+.shop>.mainImg>.left>div>.i:nth-child(2){
+    margin-left: 15px;
+}
+.shop>.mainImg>.left>div>a>.i{
+    font-size: 20px;
+    color: #3BB77E;
+}
+
+
+.shop>.mainImg>.right{
+    display: flex;
+    gap: 15px;
+}
+.shop>.mainImg>.right>div{
+    height: 46px;
+    width: 135px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #253D4E;
+    cursor: pointer;
+}
+.shop>.mainImg>.right>div:hover{
+    color: #3BB77E;
+    transition: .2s ease;
+}
+
+.shop>.mainImg>.right>div>.i{
+    color: #7E7E7E;
+    font-size: 16px;
+}
+.shop>.mainImg>.right>div>.i:hover{
+    color: rgb(201, 91, 91);
+    transition: .2s ease;
+}
+
+.shop>.mainContent{
+    margin: 50px 0;
+    display: flex;
+    gap: 24px;
+}
+
+.shop>.mainContent>aside{
+    width: 30%;
+}
+
+
+.shop>.mainContent>.container>.bar{
+    
+}
+
+.shop>.mainContent>.container>.products{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}

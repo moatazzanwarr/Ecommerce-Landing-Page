@@ -11,7 +11,9 @@ import CreateAccount from './components/createAccount/createAccount';
 import SignIn from './components/signIn/signIn';
 import CheckOut from './components/checkOut/checkOut';
 import ProductView from './components/singleProduct/productView';
+import Shop from './components/shop/shop';
 import Footer from './components/footer/footer';
+
 
 function App() {
 const openCart = ()=>{
@@ -36,6 +38,8 @@ const addToCart = (product)=>{
           <Route path="/signIn" element={<SignIn/>}/>
           <Route path="/checkOut" element={<CheckOut/>}/>
           <Route path="/productView/:id" element={<ProductView/>}/>
+          <Route path="/shop" element={<Shop/>}/>
+
         </Routes>
         <Footer/>
       </BrowserRouter>
