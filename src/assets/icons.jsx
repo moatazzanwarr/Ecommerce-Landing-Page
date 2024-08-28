@@ -32,6 +32,7 @@ import GoogleIcon from '@mui/icons-material/Google';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
 import CloseIcon from '@mui/icons-material/Close';
+import HeightIcon from '@mui/icons-material/Height';
 
 const icons = {
     SearchIcon,
@@ -66,7 +67,8 @@ const icons = {
     GoogleIcon,
     LocalOfferIcon,
     ShuffleIcon,
-    CloseIcon
+    CloseIcon,
+    HeightIcon
 }
 
 export default icons
