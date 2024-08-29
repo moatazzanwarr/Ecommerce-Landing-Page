@@ -13,6 +13,7 @@ import CheckOut from './components/checkOut/checkOut';
 import ProductView from './components/singleProduct/productView';
 import Shop from './components/shop/shop';
 import Footer from './components/footer/footer';
+import ChangePassword from './components/changePassword/changePassword';
 
 
 function App() {
@@ -39,6 +40,7 @@ const addToCart = (product)=>{
           <Route path="/checkOut" element={<CheckOut/>}/>
           <Route path="/productView/:id" element={<ProductView/>}/>
           <Route path="/shop" element={<Shop/>}/>
+          <Route path="/changePassword" element={<ChangePassword/>}/>
 
         </Routes>
         <Footer/>

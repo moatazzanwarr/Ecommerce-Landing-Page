@@ -33,6 +33,7 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
 import CloseIcon from '@mui/icons-material/Close';
 import HeightIcon from '@mui/icons-material/Height';
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
 const icons = {
     SearchIcon,
@@ -68,7 +69,8 @@ const icons = {
     LocalOfferIcon,
     ShuffleIcon,
     CloseIcon,
-    HeightIcon
+    HeightIcon,
+    FilterAltIcon
 }
 
 export default icons
