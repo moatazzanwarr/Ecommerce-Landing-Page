@@ -230,6 +230,15 @@ function Shop() {
               />
             ))}
           </div>
+          <div className="changeProducts">
+            <div><icons.ArrowBackIcon className="i"/></div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <span>. . .</span>
+            <div>6</div>
+            <div><icons.ArrowForwardIcon className="i"/></div>
+          </div>
         </div>
       </div>
       <Deals/>
