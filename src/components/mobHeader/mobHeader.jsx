@@ -12,7 +12,7 @@ import Logo from '../../assets/images/Logo.png'
 
 function MopHeader() {
   return (
-    <header className='mopHeader'>
+    <header className='mobHeader'>
       <div className='menu'>
         <icons.MenuIcon className='i'/>
       </div>
