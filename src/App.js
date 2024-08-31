@@ -3,7 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/home/home';
 import Header from './components/header/header';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Cart from './components/Cart/cart';
@@ -14,21 +14,17 @@ import ProductView from './components/singleProduct/productView';
 import Shop from './components/shop/shop';
 import Footer from './components/footer/footer';
 import ChangePassword from './components/changePassword/changePassword';
+import MobHeader from './components/mobHeader/mobHeader';
 
 
 function App() {
-const openCart = ()=>{
-
-}
-
-const [cart,setCart] = useState([])
-const addToCart = (product)=>{
-  setCart([...cart,product])
-}
+  const width = window.innerWidth;
   return (
     <div className="App">
       <BrowserRouter>
-        <Header openCart={openCart}/>
+        {
+          width <= 1024 ? <MobHeader className="headerInMobile"/> : <Header className="headerInPC"/>
+        }
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>

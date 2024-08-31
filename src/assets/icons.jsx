@@ -34,6 +34,7 @@ import ShuffleIcon from '@mui/icons-material/Shuffle';
 import CloseIcon from '@mui/icons-material/Close';
 import HeightIcon from '@mui/icons-material/Height';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const icons = {
     SearchIcon,
@@ -70,7 +71,8 @@ const icons = {
     ShuffleIcon,
     CloseIcon,
     HeightIcon,
-    FilterAltIcon
+    FilterAltIcon,
+    MenuIcon
 }
 
 export default icons

@@ -1,6 +1,7 @@
 // Imports
 import React, { useEffect, useState } from "react";
 import "./popular.css";
+import '../homeRespon.css'
 import { NavLink } from "react-router-dom";
 import Pop_product from "./pop_product";
 

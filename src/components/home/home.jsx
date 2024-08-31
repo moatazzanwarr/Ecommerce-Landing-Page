@@ -1,6 +1,7 @@
 // Imports
 import React from 'react'
 import './home.css'
+import './homeRespon.css'
 import Slider from './main-slider/slider'
 import Categories from './categories/categories'
 import Popular from './popular/popular'

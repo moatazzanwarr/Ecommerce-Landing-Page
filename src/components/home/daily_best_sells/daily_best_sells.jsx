@@ -5,16 +5,15 @@ import { Link, NavLink } from "react-router-dom";
 import Best_sells_product from "./best_sells_product";
 
 // images
-import shopNowBg from '../../../assets/images/shopnow-img.png'
+import shopNowBg from "../../../assets/images/shopnow-img.png";
 import product_1 from "../../../assets/images/product-1.png";
 import product_2 from "../../../assets/images/product-2.png";
 import product_3 from "../../../assets/images/product-3.png";
 import product_4 from "../../../assets/images/product-4.png";
 
 // Icons
-import EastIcon from '@mui/icons-material/East';
-import WestIcon from '@mui/icons-material/West';
-
+import EastIcon from "@mui/icons-material/East";
+import WestIcon from "@mui/icons-material/West";
 
 // Data
 const productData = [
@@ -26,7 +25,7 @@ const productData = [
     rate: "4.0",
     price: 28.85,
     previous: 32.02,
-    sold: 90
+    sold: 90,
   },
   {
     id: 2,
@@ -36,7 +35,7 @@ const productData = [
     rate: "5.0",
     price: 28.85,
     previous: 32.02,
-    sold: 90
+    sold: 90,
   },
   {
     id: 3,
@@ -46,7 +45,7 @@ const productData = [
     rate: "4.0",
     price: 28.85,
     previous: 32.02,
-    sold: 90
+    sold: 90,
   },
   {
     id: 4,
@@ -56,8 +55,8 @@ const productData = [
     rate: "4.0",
     price: 28.85,
     previous: 32.02,
-    sold: 90
-  }
+    sold: 90,
+  },
 ];
 
 function Daily_best_sells() {
@@ -80,32 +79,42 @@ function Daily_best_sells() {
 
       <div className="cards">
         <div className="shopNow">
-            <div className="img">
-                <img src={shopNowBg} alt="bg" />
-            </div>
-            <div className="text">
-                <h1>Bring nature <br/>into your <br/>home</h1>
-                <Link to="#">Shop Now <EastIcon className="i"/> </Link>
-            </div>
+          <div className="img">
+            <img src={shopNowBg} alt="bg" />
+          </div>
+          <div className="text">
+            <h1>
+              Bring nature <br />
+              into your <br />
+              home
+            </h1>
+            <Link to="#">
+              Shop Now <EastIcon className="i" />{" "}
+            </Link>
+          </div>
         </div>
 
-        <div className="slider">
-            {
-                productData.map((item,i)=>(
-                    <Best_sells_product
-                        src={item.src}
-                        type={item.type}
-                        title={item.title}
-                        rate={item.rate}
-                        price={item.price}
-                        previous={item.previous}
-                        sold={item.sold}
-                        key={item.id}
-                    />
-                ))
-            }
-            <span><WestIcon className="i"/></span>
-            <span><EastIcon className="i"/></span>
+        <div className="sliderContainer">
+          <div className="slider">
+            {productData.map((item, i) => (
+              <Best_sells_product
+                src={item.src}
+                type={item.type}
+                title={item.title}
+                rate={item.rate}
+                price={item.price}
+                previous={item.previous}
+                sold={item.sold}
+                key={item.id}
+              />
+            ))}
+          </div>
+          <span>
+              <WestIcon className="i" />
+            </span>
+            <span>
+              <EastIcon className="i" />
+            </span>
         </div>
       </div>
     </section>

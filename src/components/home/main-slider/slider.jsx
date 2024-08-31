@@ -10,7 +10,7 @@ function Slider() {
   return (
     <div className="main-slider">
       <div className="slide-1 slide">
-        <div>
+        <div className="text">
           <h1>Fresh Vegetables <br/>Big discount</h1>
           <span>Save up to 50% off on your first order</span>
           <form action="">
