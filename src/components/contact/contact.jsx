@@ -1,6 +1,7 @@
 // Imports
 import React from "react";
 import "./contact.css";
+import './contactRespon.css'
 import ContactHelp from "./contactHelp/contactHelp";
 import ContactForm from "./contactForm/contactForm";
 

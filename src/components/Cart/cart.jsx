@@ -1,6 +1,7 @@
 // Imports
 import React, { useState } from "react";
 import "./cart.css";
+import "./cartRespon.css";
 import CartProduct from "./cartProduct";
 
 import { Link } from "react-router-dom";
@@ -60,7 +61,7 @@ function Cart() {
                   <h1>Product</h1>
                 </li>
                 <li>
-                  <h1>Unit Price</h1>
+                  <h1>Price</h1>
                 </li>
                 <li>
                   <h1>Quantity</h1>

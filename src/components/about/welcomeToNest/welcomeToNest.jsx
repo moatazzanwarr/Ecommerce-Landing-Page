@@ -37,21 +37,23 @@ function WelcomeToNest() {
         </div>
 
         <div className="slider">
+          <div className="container">
             <div className="img">
-                <img src={welcomeImg_2} alt="img" />
-            </div>
-            <div className="img">
-                <img src={welcomeImg_3} alt="img" />
+              <img src={welcomeImg_2} alt="img" />
             </div>
             <div className="img">
-                <img src={welcomeImg_4} alt="img" />
+              <img src={welcomeImg_3} alt="img" />
             </div>
-            <div className="icon">
-                <icons.ArrowBackIcon className="i"/>
+            <div className="img">
+              <img src={welcomeImg_4} alt="img" />
             </div>
-            <div className="icon">
-                <icons.ArrowForwardIcon className="i"/>
-            </div>
+          </div>
+          <div className="icon">
+            <icons.ArrowBackIcon className="i" />
+          </div>
+          <div className="icon">
+            <icons.ArrowForwardIcon className="i" />
+          </div>
         </div>
       </div>
     </div>

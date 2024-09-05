@@ -38,7 +38,7 @@ function OurTeam() {
       <div className="container">
         <div className="text">
           <h5>Our Team</h5>
-          <h2>Meet Our Expert Team</h2>
+          <h2>Meet Our <br/>Expert Team</h2>
           <p>
             Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa
             dolor imperdiet neccon sequata congue idsem. Maecenas malesuada

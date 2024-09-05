@@ -158,30 +158,6 @@ function Header({ openCart }) {
           </div>
 
           <div>
-            <select name="" id="">
-              <option value="mega menu">Mega menu</option>
-              <option value="mega menu">Mega menu</option>
-              <option value="mega menu">Mega menu</option>
-            </select>
-          </div>
-
-          <div>
-            <select name="" id="">
-              <option value="blog">Blog</option>
-              <option value="blog">Blog</option>
-              <option value="blog">Blog</option>
-            </select>
-          </div>
-
-          <div>
-            <select name="" id="">
-              <option value="pages">Pages</option>
-              <option value="pages">Pages</option>
-              <option value="pages">Pages</option>
-            </select>
-          </div>
-
-          <div>
             <NavLink to="/contact">Contact</NavLink>
           </div>
         </div>

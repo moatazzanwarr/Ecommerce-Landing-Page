@@ -41,7 +41,7 @@ function CartProduct({ src, title, rate, price }) {
         </div>
       </li>
 
-      <li>{price * count}</li>
+      <li>{parseInt(price * count)}</li>
 
       <li>
         <icons.DeleteIcon className="i" />

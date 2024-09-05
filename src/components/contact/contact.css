@@ -41,8 +41,9 @@
 .contact .addresses{
     width: 75%;
     margin: 0 auto 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
 }
 .contact .addresses>div>h3{
     font-size: 24px;

@@ -1,6 +1,7 @@
 //Imports
 import React from "react";
 import "./checkOut.css";
+import "./checkOutRespon.css";
 
 import { Link } from "react-router-dom";
 

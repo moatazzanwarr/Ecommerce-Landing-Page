@@ -11,6 +11,7 @@ import Logo from '../../assets/images/Logo.png'
 
 
 function MopHeader() {
+  const length = localStorage.getItem("length")
   return (
     <header className='mobHeader'>
       <div className='menu'>
@@ -26,7 +27,7 @@ function MopHeader() {
         </div>
         <div>
             <icons.ShoppingCartCheckoutIcon className='i'/>
-            <span>2</span>
+            <span>{length}</span>
         </div>
       </div>
     </header>
