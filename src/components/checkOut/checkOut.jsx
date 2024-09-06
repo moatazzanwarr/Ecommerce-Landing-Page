@@ -45,8 +45,8 @@ function CheckOut() {
             <div className="left">
                 <div>
                     <div>
-                        <icons.PersonOutlineIcon className="i"/>
-                        Already have an Account?<Link to="/signIn">Click here to login</Link>
+                        <div><icons.PersonOutlineIcon className="i"/>Already have an Account?</div>
+                        <Link to="/signIn">Click here to login</Link>
                     </div>
                     <div>
                         <icons.LocalOfferIcon className="i"/>
@@ -119,7 +119,7 @@ function CheckOut() {
                                 </div>
                             </div>
                             <p>x1</p>
-                            <h4>${item.price}</h4>
+                            <h4>${parseInt(item.price)}</h4>
                         </div>
                     ))
                 }

@@ -42,15 +42,15 @@
 .checkOut>.container>p>span{
     color: #3BB77E;
 }
-.checkOut>.container>.container-2{
+.checkOut>.container>.container-2 {
     margin-top: 30px;
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
 }
 .checkOut>.container>.container-2>.left{
-    width: 60%;
+    width: 55%;
     height: fit-content;
-
+    margin: 0 2.5%;
 }
 .checkOut>.container>.container-2>.left>div:first-child{
     width: 100%;
@@ -79,7 +79,11 @@
 }
 
 
-
+.checkOut>.container>.container-2>.left>div:first-child>div:first-child>div:first-child{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
 
 
 .checkOut>.container>.container-2>.left>div:first-child>div:last-child{
@@ -112,11 +116,14 @@
     transition: .2s ease;
     opacity: .9;
 }
-.checkOut>.container>.container-2>.left>div:first-child>div:last-child>.i{
+
+.checkOut>.container>.container-2>.left>div:first-child>div:last-child>.i {
     position: absolute;
     left: 7px;
-    color: #c8c8c8;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 20px;
+    color: #c8c8c8;
 }
 
 .checkOut>.container>.container-2>.left>div:last-child{
@@ -234,7 +241,7 @@
     object-fit: cover;
 }
 .checkOut>.container>.container-2>.right>.product>.title{
-    width: 250px;
+    width: 50%;
 }
 .checkOut>.container>.container-2>.right>.product>.title>h4{
     width: 100%;
@@ -251,8 +258,13 @@
     color: gold;
 }
 
+.checkOut>.container>.container-2>.right>.product>p{
+    width: 7.24%;
+}
+
 .checkOut>.container>.container-2>.right>.product>h4{
     font-size: 18px;
     font-weight: bold;
     color: #3BB77E;
+    width: 13.28%;
 }

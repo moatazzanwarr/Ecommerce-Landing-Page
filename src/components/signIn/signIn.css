@@ -76,12 +76,34 @@
 .signIn>form>div:nth-child(6)>div:first-child{
     margin-bottom: 20px;
 }
-.signIn>form>div:nth-child(7){
+.signIn>form>div:nth-child(7) {
     text-align: center;
-    margin-top: 60px;
-    height: 40px !important;
+    height: 60px !important;
     color: #253D4E;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto 20px auto;
 }
 .signIn>form>div:nth-child(7)>a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: #3BB77E;
+}
+.signIn>form .reset{
+    display: inline-block;
+    margin: 10px;
+    color: #3BB77E;
+}
+
+.signIn>form>div:last-child>a{
+    color: #3BB77E;
+}
+
+@media (max-width:700px){
+    .signIn>form {
+        width: 90% !important;
+    }
 }

@@ -18,16 +18,17 @@ function SignIn() {
           <input type="password" id="password" placeholder="Password" />
         </div>
         <input type="submit" value="Login" />
+        <Link className="reset" to="/changePassword">Reset Password</Link>
         <p>or sign up with</p>
         <div className="signBy">
-          <div className="google">
+          <a className="google">
             <icons.GoogleIcon className="i" />
             Sign in using google
-          </div>
-          <div className="facebook">
+          </a>
+          <a className="facebook">
             <icons.FacebookIcon className="i" />
             Sign in using facebook
-          </div>
+          </a>
         </div>
         <div>
           Don't have account? <Link to="#">Sign up</Link>
