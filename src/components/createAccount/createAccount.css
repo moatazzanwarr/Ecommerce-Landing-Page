@@ -1,8 +1,7 @@
 .createAccount{
-    height: 100vh;
+    padding: 100px 0;
     display: flex;
-    place-items: center;
-    place-content: center;
+    justify-content: center;
     background: #ECECEC;
 }
 .createAccount>form{
@@ -114,4 +113,13 @@
 }
 .createAccount>form>div:last-child>a{
     color: #3BB77E;
+}
+
+@media (max-width:600px){
+    .createAccount>form{
+        width: 90% !important;
+    }
+    .createAccount>form>div:nth-child(5) {
+        gap: 10px !important;
+    }
 }

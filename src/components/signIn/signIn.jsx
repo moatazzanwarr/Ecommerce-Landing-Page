@@ -31,7 +31,7 @@ function SignIn() {
           </a>
         </div>
         <div>
-          Don't have account? <Link to="#">Sign up</Link>
+          Don't have account? <Link to="/createAccount">Sign up</Link>
         </div>
       </form>
     </section>

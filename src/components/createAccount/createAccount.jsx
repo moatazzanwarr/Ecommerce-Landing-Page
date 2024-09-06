@@ -36,7 +36,7 @@ function CreateAccount() {
             </div>
         </div>
         <div>
-            Already have an account? <Link to="#">Sign in now</Link>
+            Already have an account? <Link to="/signIn">Sign in now</Link>
         </div>
       </form>
     </section>

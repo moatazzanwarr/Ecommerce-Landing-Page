@@ -3,7 +3,6 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/home/home';
 import Header from './components/header/header';
-import { useEffect, useState } from 'react';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Cart from './components/Cart/cart';
@@ -29,7 +28,6 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
-
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/createAccount" element={<CreateAccount/>}/>
           <Route path="/signIn" element={<SignIn/>}/>
@@ -37,7 +35,6 @@ function App() {
           <Route path="/productView/:id" element={<ProductView/>}/>
           <Route path="/shop" element={<Shop/>}/>
           <Route path="/changePassword" element={<ChangePassword/>}/>
-
         </Routes>
         <Footer/>
       </BrowserRouter>
