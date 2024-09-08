@@ -14,6 +14,7 @@ import Shop from './components/shop/shop';
 import Footer from './components/footer/footer';
 import ChangePassword from './components/changePassword/changePassword';
 import MobHeader from './components/mobHeader/mobHeader';
+import { useEffect, useState } from 'react';
 
 
 function App() {
@@ -21,9 +22,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {
-          width <= 1024 ? <MobHeader className="headerInMobile"/> : <Header className="headerInPC"/>
-        }
+        {/* {
+          width <= 1024 ? <MobHeader /> : <Header />
+        } */}
+        <Header />
+        <MobHeader />
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>

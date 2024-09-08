@@ -34,7 +34,7 @@ function ProductInfo() {
         </ul>
         <ul>
           <li>Bottle</li>
-          <li>Green, Pink, Powder Blue, Purple</li>
+          <li>Green, Pink, Purple</li>
           <li>100ml</li>
           <li>70%</li>
           <li>Carton</li>

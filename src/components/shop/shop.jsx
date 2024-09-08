@@ -1,9 +1,11 @@
 // Imports
 import React, { useState, useEffect } from "react";
 import "./shop.css";
+import "./shopRespon.css";
 import Pop_product from "../home/popular/pop_product";
-import { Link } from "react-router-dom";
 import Deals from "../home/deals/deals";
+import FilterMenu from "./filterMenu";
+
 
 // Icons
 import icons from "../../assets/icons";
@@ -68,45 +70,13 @@ function Shop() {
     })
   },[])
 
+  const [openFilter,SetOpenFilter] = useState(false)
+  const filter = ()=>{
+    SetOpenFilter(!openFilter)
+  }
+
   return (
     <section className="shop">
-      <div className="mainImg">
-        <div className="left">
-          <h1>Snack</h1>
-          <div>
-            <Link to="/">
-              <icons.HomeIcon className="i" />
-              Home{" "}
-            </Link>
-            <icons.ArrowForwardIosIcon className="i" />
-            <span> Shop </span>
-            <icons.ArrowForwardIosIcon className="i" />
-            <span> Snack</span>
-          </div>
-        </div>
-        <div className="right">
-          <div>
-            <icons.CloseIcon className="i" />
-            Cabbage
-          </div>
-          <div>
-            <icons.CloseIcon className="i" />
-            Broccoli
-          </div>
-          <div>
-            <icons.CloseIcon className="i" />
-            Artichoke
-          </div>
-          <div>
-            <icons.CloseIcon className="i" />
-            Celery
-          </div>
-          <div>
-            <icons.CloseIcon className="i" />
-            Spinach
-          </div>
-        </div>
-      </div>
 
       <div className="mainContent">
         <aside>
@@ -188,21 +158,10 @@ function Shop() {
         </aside>
         <div className="container">
           <div className="bar">
-            <p>
-              We found <span>29</span> items for you!
-            </p>
+            <div className="mobileFilter" onClick={filter}>
+              <icons.FilterAltIcon className="i"/>
+            </div>
             <div>
-              <div>
-                <span>
-                  <icons.WindowIcon className="i" />
-                  Show:
-                </span>
-                <select name="" id="">
-                  <option value="3">3</option>
-                  <option value="6">6</option>
-                  <option value="9">9</option>
-                </select>
-              </div>
               <div>
                 <span>
                   <icons.HeightIcon className="i" />
@@ -242,6 +201,9 @@ function Shop() {
         </div>
       </div>
       <Deals/>
+      <div className={ openFilter ? "open mobileFilter" : "close mobileFilter"}>
+        <FilterMenu/>
+      </div>
     </section>
   );
 }

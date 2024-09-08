@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import SingleProduct from "./singleProduct";
 import ProductInfo from "./productInfo";
 import "./productView.css";
+import "./productViewRespon.css";
 
 import { Link, useParams } from "react-router-dom";
 
@@ -36,24 +37,6 @@ function ProductView() {
 
   return (
     <section className="productView">
-      <div className="bar">
-        <ul>
-          <li>
-            <Link to="/">
-              <icons.HomeIcon className="i" />
-              Home
-            </Link>
-          </li>
-          <icons.ArrowForwardIosIcon className="i" />
-          <li>
-            <Link to="#">Vegetables & tubers </Link>
-          </li>
-          <icons.ArrowForwardIosIcon className="i" />
-          <li>
-            <Link to="#"> Seeds of Change Organic</Link>
-          </li>
-        </ul>
-      </div>
       <div className="container">
         <div className="main">
           <SingleProduct

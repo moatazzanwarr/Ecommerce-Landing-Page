@@ -15,9 +15,11 @@ function Pop_product({
   discount,
   onAddToCart,
   id,
+
 }) {
+
   return (
-    <div className="pop_product">
+    <div className="pop_product" onClick={()=> console.log(id)}>
       <Link to={`/productView/${id}`} className="img">
         <img src={src} alt="" />
       </Link>

@@ -41,6 +41,12 @@ function Popular() {
     )
   },[])
 
+  const fun = (title)=>{
+    console.log(title);
+    
+  }
+
+
   return (
     <section className="popular">
       <div className="bar">
@@ -71,18 +77,19 @@ function Popular() {
       </div>
       <div className="products">
         {
-          data.map((item)=>(
-            <Pop_product
-            key={item.id}
-            src={item.src}
-            type={item.type}
-            title={item.title}
-            company={item.company}
-            rate="4.5"
-            price={item.price}
-            discount={item.discount}
-            onAddToCart={addToCart}
-            />
+          data.map((item,i)=>(
+              <Pop_product
+              key={i}
+              src={item.src}
+              type={item.type}
+              title={item.title}
+              company={item.company}
+              rate="4.5"
+              price={item.price}
+              discount={item.discount}
+              id={item.id}
+              onAddToCart={addToCart}
+              />
           ))
         }
       </div>

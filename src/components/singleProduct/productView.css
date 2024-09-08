@@ -30,9 +30,6 @@
 }
 
 .productView>.container{
-    display: flex;
-    gap: 24px;
-    width: 90%;
     margin: 0 5% 0 5%;
 }
 .productView>.container>.main{
@@ -40,11 +37,14 @@
 }
 .productView>.container>.main .singleProduct{
     display: flex;
-    gap: 50px;
+}
+.productView>.container>.main .singleProduct>.images{
+    width: 45%;
+    margin: 0 2.5%;
 }
 .productView>.container>.main .singleProduct>.images>.mainImg{
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: fit-content;
 }
 .productView>.container>.main .singleProduct>.images>.mainImg>img{
     width: 100%;
@@ -68,7 +68,8 @@
     background: green;
 }
 .productView>.container>.main .singleProduct>.text{
-    
+    width: 45%;
+    margin: 0 2.5%;
 }
 .productView>.container>.main .singleProduct>.text>h5{
     font-size: 14px;
@@ -172,7 +173,7 @@
     gap: 5px;
     border: 1px solid #3BB77E;
     height: 50px;
-    width: 90px;
+    width: 18.36%;
     border-radius: 5px;
 
 }
@@ -193,7 +194,7 @@
     border: none;
     color: #FFF;
     height: 50px;
-    width: 160px;
+    width: 32.65%;
     cursor: pointer;
     border-radius: 5px;
     display: flex;
@@ -264,12 +265,11 @@
     font-size: 17px;   
     color: #7E7E7E;
 }
-.productView>.container>.main .productInfo>p:nth-child(2){
-    height: 75px;
+.productView>.container>.main .productInfo>p:nth-child(2) {
+    margin-bottom: 25px;
 }
 .productView>.container>.main .productInfo>p:nth-child(3){
-    height: 75px;
-    height: 100px;
+    margin-bottom: 25px;
 }
 .productView>.container>.main .productInfo>.lists{
     padding-bottom: 30px;
@@ -277,9 +277,10 @@
 }
 .productView>.container>.main .productInfo>.lists:nth-child(4){
     display: flex;
-    gap: 100px;
 }
 .productView>.container>.main .productInfo>.lists:nth-child(4)>ul{
+    width: 45%;
+    margin: 0 2.5%;
     font-size: 14px;
     font-weight: bold;
     color: #7E7E7E;
@@ -292,7 +293,7 @@
 }
 
 .productView>.container>.main .productInfo>p:nth-child(5){
-    height: 130px;
+    height: fit-content;
     font-size: 16px;
     color: #7E7E7E;
     padding-top: 20px;
@@ -308,7 +309,8 @@
     color: #7E7E7E;
 }
 .productView>.container>.main .productInfo>div:nth-child(6)>p:nth-child(2){
-    height: 100px;
+    height: fit-content;
+    margin-bottom: 24px;
 }
 
 

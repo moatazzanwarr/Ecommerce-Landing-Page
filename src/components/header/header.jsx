@@ -17,7 +17,7 @@ function Header({ openCart }) {
   });
 
   return (
-    <header>
+    <header className="headerPC">
       <div class="top">
         <nav>
           <ul>
