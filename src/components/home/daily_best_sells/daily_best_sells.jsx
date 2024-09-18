@@ -1,11 +1,10 @@
 // Imports
 import React from "react";
 import "./daily_best_sells.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Best_sells_product from "./best_sells_product";
 
 // images
-import shopNowBg from "../../../assets/images/shopnow-img.png";
 import product_1 from "../../../assets/images/product-1.png";
 import product_2 from "../../../assets/images/product-2.png";
 import product_3 from "../../../assets/images/product-3.png";
@@ -78,22 +77,6 @@ function Daily_best_sells() {
       </div>
 
       <div className="cards">
-        <div className="shopNow">
-          <div className="img">
-            <img src={shopNowBg} alt="bg" />
-          </div>
-          <div className="text">
-            <h1>
-              Bring nature <br />
-              into your <br />
-              home
-            </h1>
-            <Link to="#">
-              Shop Now <EastIcon className="i" />{" "}
-            </Link>
-          </div>
-        </div>
-
         <div className="sliderContainer">
           <div className="slider">
             {productData.map((item, i) => (

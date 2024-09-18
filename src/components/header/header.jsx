@@ -1,5 +1,5 @@
 // Imports
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./header.css";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png";
@@ -11,52 +11,10 @@ import icons from "../../assets/icons";
 
 function Header({ openCart }) {
   const cartLength = localStorage.getItem("length");
-  const [length, setLength] = useState();
-  useEffect(() => {
-    setLength(cartLength);
-  });
 
   return (
     <header className="headerPC">
-      <div class="top">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-            <li>
-              <Link to="#">My Account</Link>
-            </li>
-            <li>
-              <Link to="#">Wishlist</Link>
-            </li>
-            <li>
-              <Link to="#">Order Tracking</Link>
-            </li>
-          </ul>
-        </nav>
-        <p class="center">
-          100% Secure delivery without contacting the courier
-        </p>
 
-        <div class="right">
-          <p>
-            Need help? Call Us:<span>+ 1800 900</span>
-          </p>
-          <div>
-            <select name="lang" id="">
-              <option value="eng">English</option>
-              <option value="eng">English</option>
-              <option value="eng">English</option>
-            </select>
-            <select name="country" id="">
-              <option value="eng">USD</option>
-              <option value="eng">USD</option>
-              <option value="eng">USD</option>
-            </select>
-          </div>
-        </div>
-      </div>
       <div class="bottom">
         <div class="left">
           <Link to="/">
@@ -65,12 +23,6 @@ function Header({ openCart }) {
         </div>
 
         <div class="center">
-          <select name="All Categories" id="">
-            <option value="All Categories">All Categories </option>
-            <option value="">All Categories</option>
-            <option value="">All Categories</option>
-          </select>
-
           <div>
             <input type="text" placeholder="Search for items..." />
             <button>

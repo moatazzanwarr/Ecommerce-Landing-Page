@@ -14,17 +14,12 @@ import Shop from './components/shop/shop';
 import Footer from './components/footer/footer';
 import ChangePassword from './components/changePassword/changePassword';
 import MobHeader from './components/mobHeader/mobHeader';
-import { useEffect, useState } from 'react';
 
 
 function App() {
-  const width = window.innerWidth;
   return (
     <div className="App">
       <BrowserRouter>
-        {/* {
-          width <= 1024 ? <MobHeader /> : <Header />
-        } */}
         <Header />
         <MobHeader />
         <Routes>
